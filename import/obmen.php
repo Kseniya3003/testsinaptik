@@ -122,7 +122,6 @@ function priceProduct($PRODUCT_ID, $PRICE)
     );
 
     if ($arr = $res->Fetch()) {
-        var_dump($arr);
         CPrice::Update($arr["ID"], $arFields);
     } else {
         CPrice::Add($arFields);
@@ -173,9 +172,6 @@ foreach ($sections as $nameSect) {
         $infoSect[] = $nameSect["NAME"];
     }
 }
-echo '<pre>';
-//var_dump($infoSect);
-echo '</pre>';
 
 foreach ($excel->getWorksheetIterator() as $worksheet) {
     $lists[] = $worksheet->toArray();
@@ -220,8 +216,6 @@ $sections = [];
 while ($sect = $sectionRequest->GetNext()) {
     $sections[$sect['NAME']] = $sect;
 }
-
-//var_dump($sections);
 
 //Получение и добавление элементов в разделы
 $item = CIBlockElement::GetList(
