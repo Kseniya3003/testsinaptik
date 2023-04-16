@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'Uni Neue';
+	src: url('fonts/UniNeueRegular.eot');
+	src: url('fonts/UniNeueRegular.woff') format('woff'), url('fonts/UniNeueRegular.ttf') format('truetype'), url('fonts/UniNeueRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Uni Neue';
+	src: url('fonts/UniNeueBold.eot');
+	src: url('fonts/UniNeueBold.woff') format('woff'), url('fonts/UniNeueBold.ttf') format('truetype'), url('fonts/UniNeueBold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Uni Neue';
+	src: url('fonts/UniNeueBlack.eot');
+	src: url('fonts/UniNeueBlack.woff') format('woff'), url('fonts/UniNeueBlack.ttf') format('truetype'), url('fonts/UniNeueBlack.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Uni Neue';
+	src: url('fonts/UniNeueBold-Italic.eot');
+	src: url('fonts/UniNeueBold-Italic.woff') format('woff'), url('fonts/UniNeueBold-Italic.ttf') format('truetype'), url('fonts/UniNeueBold-Italic.svg') format('svg');
+	font-weight: 700;
+	font-style: italic;
+}
+
+
+
