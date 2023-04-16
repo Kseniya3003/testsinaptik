@@ -163,6 +163,7 @@ if (isset($_GET['count_el'])){
                     array('HIDE_ICONS' => 'Y')
                 );
                 ?>
+
                 <div class="catalog-content">
 <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "sect_catalog", Array(
 	"VIEW_MODE" => "TEXT",	// Вид списка подразделов
@@ -194,6 +195,7 @@ if (isset($_GET['count_el'])){
 	),
 	false
 );?>
+
 
                         <div class="catalog-panel flex-row justify-space">
 
@@ -370,7 +372,10 @@ $APPLICATION->IncludeComponent(
 ?>
                     </div>
 
-                </div>
+
+
+
+            </div>
 
             </div>
         </div>

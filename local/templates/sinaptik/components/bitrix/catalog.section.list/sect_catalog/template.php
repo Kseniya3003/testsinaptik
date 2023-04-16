@@ -16,7 +16,7 @@ $this->setFrameMode(true);?>
     <h4>Категории товаров</h4>
     <div class="slider-categories">
         <?foreach ($arResult["SECTIONS"] as $SECTION):?>
-        <a href="" class="item">
+        <a href="<?=$SECTION["SECTION_PAGE_URL"]?>" class="item">
             <span class="name"><?=$SECTION["NAME"]?></span>
             <span class="total"><?=$SECTION["ELEMENT_CNT"]?></span>
         </a>

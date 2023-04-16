@@ -89,8 +89,51 @@ $this->setFrameMode(true);
                  url = url.slice(1, -1);
                  $('.submit-filter').attr('href', url);
              },
-
          });
-
      })
+
+    $('.minCost').on('blur', function (){
+        let sum = $(this).val();
+        if (filter.length > 0){
+            filter += '&' + 'arrFilter_P1_MIN=' + sum;
+        } else {
+            filter += '?ajax=y&arrFilter_P1_MIN=' + sum;
+        }
+        $.ajax({
+            url: filter,
+            method: 'get',
+            dataType: 'text',
+            success: function(data){
+                let start = data.indexOf('FILTER_URL');
+                let end = data.indexOf(',', start);
+                let tmp = data.slice(start, end);
+                let url = tmp.split(':')[1];
+                url = url.slice(1, -1);
+                $('.submit-filter').attr('href', url);
+            },
+        });
+    })
+
+    $('.maxCost').on('blur', function (){
+        let sum = $(this).val();
+        if (filter.length > 0){
+            filter += '&' + 'arrFilter_P1_MAX=' + sum;
+        } else {
+            filter += '?ajax=y&arrFilter_P1_MAX=' + sum;
+        }
+        $.ajax({
+            url: filter,
+            method: 'get',
+            dataType: 'text',
+            success: function(data){
+                let start = data.indexOf('FILTER_URL');
+                let end = data.indexOf(',', start);
+                let tmp = data.slice(start, end);
+                let url = tmp.split(':')[1];
+                url = url.slice(1, -1);
+                $('.submit-filter').attr('href', url);
+            },
+        });
+    })
+
 </script>

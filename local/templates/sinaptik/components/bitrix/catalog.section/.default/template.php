@@ -22,9 +22,7 @@ use \Bitrix\Main\Localization\Loc;
 
 $this->setFrameMode(true);
 ?>
-<!--<pre>-->
-<!--    --><?//var_dump($arResult["ITEMS"]);?>
-<!--</pre>-->
+
 				<div class="flex-row">
                     <?foreach ($arResult["ITEMS"] as $ITEM):?>
 					<div class="item-product">
@@ -50,7 +48,7 @@ $this->setFrameMode(true);
 						</div>
 					</div>
                     <?endforeach;?>
-
+                </div>
 
 				<div class="pagination flex-row justify-center">
 					<a href="" class="prev"></a>
@@ -62,4 +60,6 @@ $this->setFrameMode(true);
 					<a href="">12</a>
 					<a href="" class="next"></a>
 				</div>
+
+
 
